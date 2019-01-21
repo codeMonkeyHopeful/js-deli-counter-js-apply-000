@@ -1,7 +1,7 @@
 
 function takeANumber(arr, name) {
-  return 'Welcome '+ name +'. You are number ' + arr.length +1 + ' in line.'
   arr.push(name);
+  return 'Welcome '+ name +'. You are number ' + arr.length + ' in line.'
 }
 
 function nowServing(arr) {
