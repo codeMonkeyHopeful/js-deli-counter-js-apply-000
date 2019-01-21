@@ -6,7 +6,7 @@ function takeANumber(arr, name) {
 
 function nowServing(arr) {
   if(arr.length > 0) {
-    return `Currently serving ${arr.shift()}`;
+    return `Currently serving ${arr.shift()}.`;
   } else {
     return 'There is nobody waiting to be served!';
   }
@@ -16,7 +16,7 @@ function currentLine(arr) {
   if(arr.length > 0){
   var line = 'The line is currently: ';
   arr.forEach(function (pos) {
-    line += arr.indexOf(pos) +'. ' + pos +', ';
+    line += arr.indexOf(pos) + 1 +'. ' + pos +', ';
   });
   return line;
   } else {
