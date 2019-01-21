@@ -18,7 +18,7 @@ function currentLine(arr) {
   arr.forEach(function (pos) {
     line += arr.indexOf(pos) + 1 +'. ' + pos +', ';
   });
-  return line;
+  return line.slice(0,line.length - 1);
   } else {
     return 'The line is currently empty.'
   }
